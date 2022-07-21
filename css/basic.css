@@ -1,0 +1,57 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 6fr;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-navy {
+  color: navy;
+}
+
+.bg-red {
+  background-color: rgba(253, 107, 107, 0.25);
+}
+
+.bg-green {
+  background-color: rgba(125, 212, 117, 0.25);
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.border-left {
+  border-left: 1px solid;
+  border-color: gray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}

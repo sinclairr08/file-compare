@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+    <title>File Compare</title>
+  </head>
+  <body>
+    <h1 class="title center">File Compare Program</h1>
+    <form class="file-input-form">
+      <div class="center-around w-full">
+        <label class="file-wrapper-1">
+          <svg
+            class="icon pointer text-gray"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+            ></path>
+          </svg>
+          <input required type="file" class="file-1 hidden" />
+        </label>
+        <label class="file-wrapper-2">
+          <svg
+            class="icon pointer text-gray"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+            ></path>
+          </svg>
+          <input required type="file" class="file-2 hidden" />
+        </label>
+      </div>
+      <button class="submit-button center pointer compare">Compare</button>
+    </form>
+    <div class="center compare-result"></div>
+    <div class="compare-content">
+      <div class="grid">
+        <span class="text-center p-1">L</span>
+        <span class="compare-name-1 text-center p-1 border-left">EMPTY</span>
+        <span class="compare-name-2 text-center p-1 border-left">EMPTY</span>
+      </div>
+    </div>
+    <script src="js/file-compare.js"></script>
+  </body>
+</html>
